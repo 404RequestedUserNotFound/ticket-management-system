@@ -1,0 +1,264 @@
+#include <iostream>
+#include <string.h>
+#include <conio.h>
+
+
+
+using namespace std;
+int main()
+
+{
+
+char choose_time;
+char choose_destination;
+char answer;
+char choice;
+double adult_total;
+double child_total;
+double total_price;
+double a, b, c, d ;
+double totalprice;
+const double ADULT_PRICE = 500;
+const double CHILD_PRICE = 350;
+const double tax = .55;
+int age;
+int date;
+int month;
+int year;
+int adult_count;
+int child_count;
+string adult_name;
+string name;
+
+
+
+
+
+{
+
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+
+
+
+cout <<"             Hello sir! Welcome to The Z BUS service. We ensure a safe journey for you and your family"<<endl;
+cout <<"                                  Please let us know that what you want?"<<endl;
+
+
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+
+
+
+
+
+cout << "                                             A: TO KNOW WHAT WE ARE PROVIDING "<<endl;
+
+cout << "                                                 B: TICKET PRICE "<< endl;
+
+cout << "                                    C: PROVIDE YOUR ALL INFORMATION TO BUY TICKET"<<endl;
+
+
+
+}
+
+
+
+{
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+
+
+
+cout <<  "                                      Press [A] [B] [C]  to choose your choice " << endl;
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+cin >> choice;
+
+
+
+if (choice == 'A' || choice == 'a')
+{
+cout << "                 Currently we are offering AC and Non AC bus services and our buses are available 24X7"<< endl;
+}
+
+
+
+else if (choice == 'B' || choice == 'b')
+
+{
+
+ cout<<"                                              [1]DHAKA TO CHITTAGONG "<<endl;
+ cout<<"                                                [2]DHAKA TO KHULNA"<<endl;
+ cout<<"                                               [3]DHAKA  TO RAJSHAHI"<<endl;
+
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+
+cout<<"                                         Press [1] [2] [3] to know the price"<<endl;
+
+ cin>>choose_destination;
+
+
+
+if (choose_destination == '1' )
+{
+      cout<<"                                               ONLY 1000 TAKA (AC)"<<endl;
+}
+ else if (choose_destination == '2' )
+ {
+      cout<<"                                              ONLY 700 TAKA (AC)"<<endl;
+ }
+  else if (choose_destination == '3' )
+{
+      cout<<"                                              ONLY 1200 TAKA (Non AC)"<<endl;
+}
+
+}
+
+else if (choice == 'C' || choice == 'c')
+
+{
+
+{
+
+{
+
+ cout<<"                                                [1]DHAKA TO CHITTAGONG "<<endl;
+ cout<<"                                                   [2]DHAKA TO KHULNA"<<endl;
+ cout<<"                                                 [3]DHAKA  TO RAJSHAHI"<<endl;
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+
+
+cout<<"                                          Press [1] [2] [3] to choose your destination"<<endl;
+}
+
+ cin>>choose_destination;
+
+if (choose_destination == '1' )
+{
+      cout<<"                                              Only 1000 taka(AC)"<<endl;
+}
+ else if (choose_destination == '2' )
+ {
+      cout<<"                                               only 700 taka(AC)"<<endl;
+ }
+  else if (choose_destination == '3' )
+{
+      cout<<"                                             Only 1200 taka(Non AC)"<<endl;
+}
+
+}
+
+
+
+
+                                               cout<<" [1]Choose time 07:00 AM"<<endl;
+                                               cout<<" [2]Choose time 09:00 AM"<<endl;
+                                               cout<<" [3]Choose time 11:00 AM"<<endl;
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+                                  cout<<"Press [1] [2] [3] to choose the time of travel"<<endl;
+cin>>choose_time;
+
+
+if (choose_time == '1' )
+{
+cout<<"Whats your name"<<endl;
+cin>>name;
+cout<<"Whats your age"<<endl;
+cin>>age;
+cout<<"Enter the date you want to journey "<<endl;
+cin>>date>>month>>year;
+cout<<"TELL US THE ADULT NUMBER"<<endl;
+cin>>adult_count;
+cout<<"TELL US THE CHILD NUMBER"<<endl;
+cin>>child_count;
+adult_total=adult_count * ADULT_PRICE * tax;
+child_total=child_count * CHILD_PRICE * tax;
+total_price= adult_total+child_total;
+cout<<"                                       DEAR" <<name<<" ,SIR YOUR TOTAL COST IS :  "<<total_price<<endl;
+}
+
+else if (choose_time == '2' )
+{
+cout<<"Whats your name"<<endl;
+cin>>name;
+cout<<"Whats your age"<<endl;
+cin>>age;
+cout<<"Enter the date you want to journey "<<endl;
+cin>>date>>month>>year;
+cout<<"TELL US THE ADULT NUMBER"<<endl;
+cin>>adult_count;
+cout<<"TELL US THE CHILD NUMBER"<<endl;
+cin>>child_count;
+adult_total=adult_count * ADULT_PRICE * tax;
+child_total=child_count * CHILD_PRICE * tax;
+total_price= adult_total+child_total;
+cout<<"                                      DEAR" <<name<<" ,SIR YOUR TOTAL COST IS :  "<<total_price<<endl;
+}
+
+
+else if (choose_time =='3')
+{
+cout<<"Whats your name"<<endl;
+cin>>name;
+cout<<"Whats your age"<<endl;
+cin>>age;
+cout<<"Enter the date you want to journey "<<endl;
+cin>>date>>month>>year;
+cout<<"TELL US THE ADULT NUMBER"<<endl;
+cin>>adult_count;
+cout<<"TELL US THE CHILD NUMBER"<<endl;
+cin>>child_count;
+adult_total=adult_count * ADULT_PRICE * tax;
+child_total=child_count * CHILD_PRICE * tax;
+total_price= adult_total+child_total;
+cout<<"                                        DEAR" <<name<<" ,SIR YOUR TOTAL COST IS :  "<<total_price<<endl;
+}
+
+}
+
+
+cout<<"           "<<endl;
+cout<<"           "<<endl;
+
+
+cout << "                                           THANK YOU SIR FOR CHOOSING US" << endl;
+cout << "                                If you want more information please contact our help line" << endl;
+
+
+
+}
+
+getch();
+}
+
+
+
+
+
+
